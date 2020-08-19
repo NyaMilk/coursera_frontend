@@ -1,0 +1,276 @@
+/* Отспуты, заголовки, общее */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  min-width: 800px;
+  max-width: 1920px;
+  background: #ebebeb;
+  display: flex;
+  flex-direction: column;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.wrap {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+h1 {
+  margin: auto;
+  padding: 1.5em 0;
+  font: bold 2.5rem sans-serif;
+}
+
+h2 {
+  text-transform: uppercase;
+  font: 1.5em/1.5 sans-serif;
+  color: #e80802;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Разбивка контента на 3 блока */
+main {
+  flex: 1 0 auto;
+}
+
+main aside {
+  flex-basis: 20%;
+  background: #d9d9d9;
+}
+
+main section {
+  flex-basis: 60%;
+}
+
+/* Меню с выбором породы */
+input[type="radio"] {
+  display: none;
+}
+
+.cat-breed {
+  align-self: stretch;
+  font: 1.2rem sans-serif;
+}
+
+.cat-breed label {
+  display: inline-block;
+  width: 100%;
+  padding: 1.5em 1em;
+  box-sizing: border-box;
+  border-bottom: 1px solid #fff;
+  cursor: pointer;
+  position: relative;
+}
+
+.cat-breed label::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  height: 1px;
+  width: 100%;
+  border-bottom: 1px solid #5a5a5a;
+}
+
+#cat-breed__check-1:checked ~ .gallary :not([data-breed="1"]) img,
+#cat-breed__check-2:checked ~ .gallary :not([data-breed="2"]) img,
+#cat-breed__check-3:checked ~ .gallary :not([data-breed="3"]) img,
+#cat-breed__check-4:checked ~ .gallary :not([data-breed="4"]) img {
+  opacity: 0.5;
+}
+
+#cat-breed__check-1:checked ~ .cat-breed label[for="cat-breed__check-1"],
+#cat-breed__check-2:checked ~ .cat-breed label[for="cat-breed__check-2"],
+#cat-breed__check-3:checked ~ .cat-breed label[for="cat-breed__check-3"],
+#cat-breed__check-4:checked ~ .cat-breed label[for="cat-breed__check-4"] {
+  background: #5a5a5a;
+  color: #fff;
+}
+
+/* Галлерея по центру */
+.gallary {
+  margin-right: 0.8rem;
+  margin-left: 0.8rem;
+  display: grid;
+  grid-gap: 0.8rem;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 20vw);
+  grid-template-areas:
+    "a b b"
+    "c d e"
+    "f f g"
+    "h h h";
+}
+
+.gallary :nth-child(1) {
+  grid-area: a;
+}
+
+.gallary :nth-child(2) {
+  grid-area: b;
+}
+
+.gallary :nth-child(3) {
+  grid-area: c;
+}
+
+.gallary :nth-child(4) {
+  grid-area: d;
+}
+
+.gallary :nth-child(5) {
+  grid-area: e;
+}
+
+.gallary :nth-child(6) {
+  grid-area: f;
+}
+
+.gallary :nth-child(7) {
+  grid-area: g;
+}
+
+.gallary :nth-child(8) {
+  grid-area: h;
+}
+
+.gallary img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Плашка при наведении на фото */
+.gallary div {
+  position: relative;
+}
+
+.gallary div:hover::after {
+  content: attr(data-title);
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 10%;
+  padding: 0.5em;
+  background: rgba(0, 0, 0, 0.4);
+  font: 1.5em/1.5 sans-serif;
+  color: #fff;
+}
+
+/* Рейтинг */
+/* Рейтинг отспуты */
+.rating {
+  align-self: flex-start;
+  padding: 0.2em 1em 1em;
+  text-align: right;
+}
+
+.rating h2,
+.rating ul {
+  text-align: left;
+}
+
+.rating ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.rating ul li {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font: 1.2rem sans-serif;
+  margin-top: 1.3em;
+}
+
+.rating ul li:before {
+  content: attr(data-breed);
+  display: block;
+  flex-basis: 100%;
+  padding-bottom: 0.5em;
+}
+
+.rating ul li:after {
+  content: attr(data-score);
+  display: block;
+  flex-basis: 20%;
+  font-weight: bold;
+  text-align: right;
+}
+
+/* Заполнение в зависомости от значения */
+.high > * {
+  flex-basis: 80%;
+}
+
+.middle > * {
+  flex-basis: 60%;
+}
+
+.low > * {
+  flex-basis: 40%;
+}
+
+/* Цвет шкалы рейтинга */
+.rating__scale-1 {
+  background: linear-gradient(to right, #01e86e, #fff);
+}
+
+.rating__scale-2 {
+  background: linear-gradient(to right, #fff601, #fff);
+}
+
+.rating__scale-3 {
+  background: linear-gradient(to right, #e80802, #fff);
+}
+
+/* Сортировка рейтинга */
+#rating__check:checked ~ ul .high {
+  order: 1;
+}
+
+#rating__check:checked ~ ul .middle {
+  order: 2;
+}
+
+#rating__check:checked ~ ul .low {
+  order: 3;
+}
+
+/* Подвал */
+footer {
+  margin-top: 2em;
+  border-top: 1px solid #5a5a5a;
+  flex-shrink: 0;
+}
+
+footer .wrap {
+  display: flex;
+  justify-content: space-between;
+  font: 1rem/1.5 sans-serif;
+  padding: 1em;
+}
+
+footer address {
+  font-style: normal;
+  color: #1634a3;
+}

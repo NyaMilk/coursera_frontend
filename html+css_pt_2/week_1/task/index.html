@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Мяндекс.Муррркет</title>
+</head>
+
+<body>
+    <!-- <header>
+        <h1>Мяндекс.<span>Муррркет</span></h1>
+        <p>Интернет-магазин добрых котиков =^･ｪ･^=</p>
+    </header> -->
+    <header>
+        <div class="wrap">
+            <h1>Мяндекс.<span>Муррркет</span></h1>
+            <p>Интернет-магазин добрых котиков =^･ｪ･^=</p>
+        </div>
+
+    </header>
+    <section class="catalog" aria-label="Каталог бабуленькиных котиков">
+        <div class="wrap">
+            <input type="radio" id="view-box" name="view" value="box" checked>
+            <label for="view-box" aria-label="Вывод плитками" title="Вывод плитками">Вывод плитками</label>
+            <br>
+            <input type="radio" id="view-list" name="view" value="list">
+            <label for="view-list" aria-label="Вывод списом" title="Вывод списом">Вывод списом</label>
+            <br>
+            <article class="catalog__item">
+                <p><img src="img/salem1.jpg" alt="Подпись котика (Котик пианист)"></p>
+                <div class="catalog__info">
+                    <h2><a href="#">Карибас</a></h2>
+                    <ul class="catalog__breadcrumbs">
+                        <li><a href="#">Котэ</a></li>
+                        <li><a href="#">Экзотические котики</a></li>
+                    </ul>
+                    <fieldset class="rating">
+                        <input class="rating__input" type="radio" name="cat-1" id="cat-1-10" value="10">
+                        <label class="rating__star" for="cat-1-10" aria-label="Оценка 5 из 5" title="5 из 5"></label>
+
+                        <input class="rating__input" type="radio" name="cat-1" id="cat-1-9" value="9">
+                        <label class="rating__star half" for="cat-1-9" aria-label="Оценка 4.5 из 5"
+                            title="4.5 из 5"></label>
+
+                        <input class="rating__input" type="radio" name="cat-1" id="cat-1-8" value="8">
+                        <label class="rating__star" for="cat-1-8" aria-label="Оценка 4 из 5" title="4 из 5"></label>
+
+                        <input class="rating__input" type="radio" name="cat-1" id="cat-1-7" value="7">
+                        <label class="rating__star half" for="cat-1-7" aria-label="Оценка 3.5 из 5"
+                            title="3.5 из 5"></label>
+
+                        <input class="rating__input" type="radio" name="cat-1" id="cat-1-6" value="6">
+                        <label class="rating__star" for="cat-1-6" aria-label="Оценка 3 из 5" title="3 из 5"></label>
+
+                        <input class="rating__input" type="radio" name="cat-1" id="cat-1-5" value="5">
+                        <label class="rating__star half" for="cat-1-5" aria-label="Оценка 2.5 из 5"
+                            title="2.5 из 5"></label>
+
+                        <input class="rating__input" type="radio" name="cat-1" id="cat-1-4" value="4">
+                        <label class="rating__star" for="cat-1-4" aria-label="Оценка 2 из 5" title="2 из 5"></label>
+
+                        <input class="rating__input" type="radio" name="cat-1" id="cat-1-3" value="3">
+                        <label class="rating__star half" for="cat-1-3" aria-label="Оценка 1.5 из 5"
+                            title="1.5 из 5"></label>
+
+                        <input class="rating__input" type="radio" name="cat-1" id="cat-1-2" value="2">
+                        <label class="rating__star" for="cat-1-2" aria-label="Оценка 1 из 5" title="1 из 5"></label>
+
+                        <input class="rating__input" type="radio" name="cat-1" id="cat-1-1" value="1">
+                        <label class="rating__star half" for="cat-1-1" aria-label="Оценка 0.5 из 5"
+                            title="0.5 из 5"></label>
+                    </fieldset>
+                    <div>
+                        <span class="price">1 000 ₽</span>
+                        <span class="price-old">1 050 ₽</span>
+                    </div>
+                </div>
+                <p>
+                    Рожден на экзотических островах от благородных родителей. Характер общительный, склонный к пляжным
+                    вечеринкам. Обожает карибский молочный коктейль, моллюсков и летучую рыбу. Требует тщательного ухода
+                    специальными средствами от перегрева шерстки и еженедельного мадикюра.
+                </p>
+            </article>
+
+            <article class="catalog__item">
+                <p><img src="img/salem2.jpg" alt="Подпись котика (Котик пианист)"></p>
+                <div class="catalog__info">
+                    <h2><a href="#">Людовик XIV</a></h2>
+                    <ul class="catalog__breadcrumbs">
+                        <li><a href="#">Котэ</a></li>
+                        <li><a href="#">Королевские котики</a></li>
+                    </ul>
+                    <fieldset class="rating">
+                        <input class="rating__input" type="radio" name="cat-2" id="cat-2-10" value="10">
+                        <label class="rating__star" for="cat-2-10" aria-label="Оценка 5 из 5" title="5 из 5"></label>
+
+                        <input class="rating__input" type="radio" name="cat-2" id="cat-2-9" value="9">
+                        <label class="rating__star half" for="cat-2-9" aria-label="Оценка 4.5 из 5"
+                            title="4.5 из 5"></label>
+
+                        <input class="rating__input" type="radio" name="cat-2" id="cat-2-8" value="8">
+                        <label class="rating__star" for="cat-2-8" aria-label="Оценка 4 из 5" title="4 из 5"></label>
+
+                        <input class="rating__input" type="radio" name="cat-2" id="cat-2-7" value="7">
+                        <label class="rating__star half" for="cat-2-7" aria-label="Оценка 3.5 из 5"
+                            title="3.5 из 5"></label>
+
+                        <input class="rating__input" type="radio" name="cat-2" id="cat-2-6" value="6">
+                        <label class="rating__star" for="cat-2-6" aria-label="Оценка 3 из 5" title="3 из 5"></label>
+
+                        <input class="rating__input" type="radio" name="cat-2" id="cat-2-5" value="5">
+                        <label class="rating__star half" for="cat-2-5" aria-label="Оценка 2.5 из 5"
+                            title="2.5 из 5"></label>
+
+                        <input class="rating__input" type="radio" name="cat-2" id="cat-2-4" value="4">
+                        <label class="rating__star" for="cat-2-4" aria-label="Оценка 2 из 5" title="2 из 5"></label>
+
+                        <input class="rating__input" type="radio" name="cat-2" id="cat-2-3" value="3">
+                        <label class="rating__star half" for="cat-2-3" aria-label="Оценка 1.5 из 5"
+                            title="1.5 из 5"></label>
+
+                        <input class="rating__input" type="radio" name="cat-2" id="cat-2-2" value="2">
+                        <label class="rating__star" for="cat-2-2" aria-label="Оценка 1 из 5" title="1 из 5"></label>
+
+                        <input class="rating__input" type="radio" name="cat-2" id="cat-2-1" value="1">
+                        <label class="rating__star half" for="cat-2-1" aria-label="Оценка 0.5 из 5"
+                            title="0.5 из 5"></label>
+                    </fieldset>
+                    <div>
+                        <span class="price">10 000 ₽</span>
+                    </div>
+                </div>
+                <p>
+                    Выдающийся представитель королевской породы. Обладает утонченными манерами и изысканным вкусом.
+                    Характер спокойный, но требовательный – дважды не мяфкнет. Окажет честь стать членом королевской
+                    семьи исключительно тому, кто имеет опыт обхождения с монаршими особами и средства для поддержания
+                    соответствующего статуса.
+                </p>
+            </article>
+
+            <article class="catalog__item">
+                <p><img src="img/salem3.jpg" alt="Подпись котика (Котик пианист)"></p>
+                <div class="catalog__info">
+                    <h2><a href="#">Пехил</a></h2>
+                    <ul class="catalog__breadcrumbs">
+                        <li><a href="#">Котэ</a></li>
+                        <li><a href="#">Гламурные котики</a></li>
+                    </ul>
+                    <fieldset class="rating">
+                        <input class="rating__input" type="radio" name="cat-3" id="cat-3-10" value="10">
+                        <label class="rating__star" for="cat-3-10" aria-label="Оценка 5 из 5" title="5 из 5"></label>
+
+                        <input class="rating__input" type="radio" name="cat-3" id="cat-3-9" value="9">
+                        <label class="rating__star half" for="cat-3-9" aria-label="Оценка 4.5 из 5"
+                            title="4.5 из 5"></label>
+
+                        <input class="rating__input" type="radio" name="cat-3" id="cat-3-8" value="8">
+                        <label class="rating__star" for="cat-3-8" aria-label="Оценка 4 из 5" title="4 из 5"></label>
+
+                        <input class="rating__input" type="radio" name="cat-3" id="cat-3-7" value="7">
+                        <label class="rating__star half" for="cat-3-7" aria-label="Оценка 3.5 из 5"
+                            title="3.5 из 5"></label>
+
+                        <input class="rating__input" type="radio" name="cat-3" id="cat-3-6" value="6">
+                        <label class="rating__star" for="cat-3-6" aria-label="Оценка 3 из 5" title="3 из 5"></label>
+
+                        <input class="rating__input" type="radio" name="cat-3" id="cat-3-5" value="5">
+                        <label class="rating__star half" for="cat-3-5" aria-label="Оценка 2.5 из 5"
+                            title="2.5 из 5"></label>
+
+                        <input class="rating__input" type="radio" name="cat-3" id="cat-3-4" value="4">
+                        <label class="rating__star" for="cat-3-4" aria-label="Оценка 2 из 5" title="2 из 5"></label>
+
+                        <input class="rating__input" type="radio" name="cat-3" id="cat-3-3" value="3">
+                        <label class="rating__star half" for="cat-3-3" aria-label="Оценка 1.5 из 5"
+                            title="1.5 из 5"></label>
+
+                        <input class="rating__input" type="radio" name="cat-3" id="cat-3-2" value="2">
+                        <label class="rating__star" for="cat-3-2" aria-label="Оценка 1 из 5" title="1 из 5"></label>
+
+                        <input class="rating__input" type="radio" name="cat-3" id="cat-3-1" value="1">
+                        <label class="rating__star half" for="cat-3-1" aria-label="Оценка 0.5 из 5"
+                            title="0.5 из 5"></label>
+                    </fieldset>
+                    <div>
+                        <span class="price">1 000 ₽</span>
+                    </div>
+                </div>
+                <p>
+                    Одна из самых ярких представительниц породы гламурных. Обожает все шикарное, блестящее, пушистое.
+                    Составит идеальную компанию обладателям тонкого вкуса, склонных к удовольствиям и роскоши.
+                    Предпочитает охлажденное шампанское и легкую закуску.
+                </p>
+            </article>
+
+            <article class="catalog__item">
+                <p><img src="img/salem4.jpg" alt="Подпись котика (Котик пианист)"></p>
+                <div class="catalog__info">
+                    <h2><a href="#">Пифагор</a></h2>
+                    <ul class="catalog__breadcrumbs">
+                        <li><a href="#">Котэ</a></li>
+                        <li><a href="#">Ученые котики</a></li>
+                    </ul>
+                    <fieldset class="rating">
+                        <input class="rating__input" type="radio" name="cat-4" id="cat-4-10" value="10">
+                        <label class="rating__star" for="cat-4-10" aria-label="Оценка 5 из 5" title="5 из 5"></label>
+
+                        <input class="rating__input" type="radio" name="cat-4" id="cat-4-9" value="9">
+                        <label class="rating__star half" for="cat-4-9" aria-label="Оценка 4.5 из 5"
+                            title="4.5 из 5"></label>
+
+                        <input class="rating__input" type="radio" name="cat-4" id="cat-4-8" value="8">
+                        <label class="rating__star" for="cat-4-8" aria-label="Оценка 4 из 5" title="4 из 5"></label>
+
+                        <input class="rating__input" type="radio" name="cat-4" id="cat-4-7" value="7">
+                        <label class="rating__star half" for="cat-4-7" aria-label="Оценка 3.5 из 5"
+                            title="3.5 из 5"></label>
+
+                        <input class="rating__input" type="radio" name="cat-4" id="cat-4-6" value="6">
+                        <label class="rating__star" for="cat-4-6" aria-label="Оценка 3 из 5" title="3 из 5"></label>
+
+                        <input class="rating__input" type="radio" name="cat-4" id="cat-4-5" value="5">
+                        <label class="rating__star half" for="cat-4-5" aria-label="Оценка 2.5 из 5"
+                            title="2.5 из 5"></label>
+
+                        <input class="rating__input" type="radio" name="cat-4" id="cat-4-4" value="4">
+                        <label class="rating__star" for="cat-4-4" aria-label="Оценка 2 из 5" title="2 из 5"></label>
+
+                        <input class="rating__input" type="radio" name="cat-4" id="cat-4-3" value="3">
+                        <label class="rating__star half" for="cat-4-3" aria-label="Оценка 1.5 из 5"
+                            title="1.5 из 5"></label>
+
+                        <input class="rating__input" type="radio" name="cat-4" id="cat-4-2" value="2">
+                        <label class="rating__star" for="cat-4-2" aria-label="Оценка 1 из 5" title="1 из 5"></label>
+
+                        <input class="rating__input" type="radio" name="cat-4" id="cat-4-1" value="1">
+                        <label class="rating__star half" for="cat-4-1" aria-label="Оценка 0.5 из 5"
+                            title="0.5 из 5"></label>
+                    </fieldset>
+                    <div>
+                        <span class="price">1 000 ₽</span>
+                    </div>
+                </div>
+                <p>
+                    Представитель уникальной породы ученых. Высокообразованный эрудит, полиглот и философ. Обладает
+                    нестандартным мышлением и феноменальной памятью. Звание – академик. Придерживается строгой диеты для
+                    поддержания физической формы и умственной деятельности. Станет отличным домашним учителем не только
+                    для школьников, но и студентов ВУЗов.
+                </p>
+            </article>
+
+            <article class="catalog__item">
+                <p><img src="img/salem5.jpg" alt="Подпись котика (Котик пианист)"></p>
+                <div class="catalog__info">
+                    <h2><a href="#">Консерватиус</a></h2>
+                    <ul class="catalog__breadcrumbs">
+                        <li><a href="#">Котэ</a></li>
+                        <li><a href="#">Политические котики</a></li>
+                    </ul>
+                    <fieldset class="rating">
+                        <input class="rating__input" type="radio" name="cat-5" id="cat-5-10" value="10">
+                        <label class="rating__star" for="cat-5-10" aria-label="Оценка 5 из 5" title="5 из 5"></label>
+
+                        <input class="rating__input" type="radio" name="cat-5" id="cat-5-9" value="9">
+                        <label class="rating__star half" for="cat-5-9" aria-label="Оценка 4.5 из 5"
+                            title="4.5 из 5"></label>
+
+                        <input class="rating__input" type="radio" name="cat-5" id="cat-5-8" value="8">
+                        <label class="rating__star" for="cat-5-8" aria-label="Оценка 4 из 5" title="4 из 5"></label>
+
+                        <input class="rating__input" type="radio" name="cat-5" id="cat-5-7" value="7">
+                        <label class="rating__star half" for="cat-5-7" aria-label="Оценка 3.5 из 5"
+                            title="3.5 из 5"></label>
+
+                        <input class="rating__input" type="radio" name="cat-5" id="cat-5-6" value="6">
+                        <label class="rating__star" for="cat-5-6" aria-label="Оценка 3 из 5" title="3 из 5"></label>
+
+                        <input class="rating__input" type="radio" name="cat-5" id="cat-5-5" value="5">
+                        <label class="rating__star half" for="cat-5-5" aria-label="Оценка 2.5 из 5"
+                            title="2.5 из 5"></label>
+
+                        <input class="rating__input" type="radio" name="cat-5" id="cat-5-4" value="4">
+                        <label class="rating__star" for="cat-5-4" aria-label="Оценка 2 из 5" title="2 из 5"></label>
+
+                        <input class="rating__input" type="radio" name="cat-5" id="cat-5-3" value="3">
+                        <label class="rating__star half" for="cat-5-3" aria-label="Оценка 1.5 из 5"
+                            title="1.5 из 5"></label>
+
+                        <input class="rating__input" type="radio" name="cat-5" id="cat-5-2" value="2">
+                        <label class="rating__star" for="cat-5-2" aria-label="Оценка 1 из 5" title="1 из 5"></label>
+
+                        <input class="rating__input" type="radio" name="cat-5" id="cat-5-1" value="1">
+                        <label class="rating__star half" for="cat-5-1" aria-label="Оценка 0.5 из 5"
+                            title="0.5 из 5"></label>
+                    </fieldset>
+                    <div>
+                        <span class="price">1 000 ₽</span>
+                    </div>
+                </div>
+                <p>
+                    Правоцентрист политиканской породы. Обладает невероятным политическим чутьем. Способен возглавить
+                    избирательную кампанию с гарантией победы не менее 80%. Имеет множественные тесные связи с
+                    представителями кошачьих по всему миру. Подозрителен, требует к себе почтительного и уважительного
+                    отношения. Спит мало, любит мойву.
+                </p>
+            </article>
+
+            <article class="catalog__item">
+                <p><img src="img/salem6-1.gif" alt="Подпись котика (Котик пианист)"></p>
+                <div class="catalog__info">
+                    <h2><a href="#">DJ Фортемьяно</a></h2>
+                    <ul class="catalog__breadcrumbs">
+                        <li><a href="#">Котэ</a></li>
+                        <li><a href="#">Музыковые котики</a></li>
+                    </ul>
+                    <fieldset class="rating">
+                        <input class="rating__input" type="radio" name="cat-6" id="cat-6-10" value="10">
+                        <label class="rating__star" for="cat-6-10" aria-label="Оценка 5 из 5" title="5 из 5"></label>
+
+                        <input class="rating__input" type="radio" name="cat-6" id="cat-6-9" value="9">
+                        <label class="rating__star half" for="cat-6-9" aria-label="Оценка 4.5 из 5"
+                            title="4.5 из 5"></label>
+
+                        <input class="rating__input" type="radio" name="cat-6" id="cat-6-8" value="8">
+                        <label class="rating__star" for="cat-6-8" aria-label="Оценка 4 из 5" title="4 из 5"></label>
+
+                        <input class="rating__input" type="radio" name="cat-6" id="cat-6-7" value="7">
+                        <label class="rating__star half" for="cat-6-7" aria-label="Оценка 3.5 из 5"
+                            title="3.5 из 5"></label>
+
+                        <input class="rating__input" type="radio" name="cat-6" id="cat-6-6" value="6">
+                        <label class="rating__star" for="cat-6-6" aria-label="Оценка 3 из 5" title="3 из 5"></label>
+
+                        <input class="rating__input" type="radio" name="cat-6" id="cat-6-5" value="5">
+                        <label class="rating__star half" for="cat-6-5" aria-label="Оценка 2.5 из 5"
+                            title="2.5 из 5"></label>
+
+                        <input class="rating__input" type="radio" name="cat-6" id="cat-6-4" value="4">
+                        <label class="rating__star" for="cat-6-4" aria-label="Оценка 2 из 5" title="2 из 5"></label>
+
+                        <input class="rating__input" type="radio" name="cat-6" id="cat-6-3" value="3">
+                        <label class="rating__star half" for="cat-6-3" aria-label="Оценка 1.5 из 5"
+                            title="1.5 из 5"></label>
+
+                        <input class="rating__input" type="radio" name="cat-6" id="cat-6-2" value="2">
+                        <label class="rating__star" for="cat-6-2" aria-label="Оценка 1 из 5" title="1 из 5"></label>
+
+                        <input class="rating__input" type="radio" name="cat-6" id="cat-6-1" value="1">
+                        <label class="rating__star half" for="cat-6-1" aria-label="Оценка 0.5 из 5"
+                            title="0.5 из 5"></label>
+                    </fieldset>
+                    <div>
+                        <span class="price">1 000 ₽</span>
+                    </div>
+                </div>
+                <p>
+                    Один из представителей музыковой породы. Музыкально одаренный, общительный, веселый. Отлично миксует
+                    классическую музыку с электронной. Обожает ночные выступления перед большой аудиторией, имеет массу
+                    поклонников. В еде абсолютно не прихотлив, но поглощает большое количество энергетиков.
+                </p>
+            </article>
+
+            <article class="catalog__item">
+                <p><img src="img/salem7.jpg" alt="Подпись котика (Котик пианист)"></p>
+                <div class="catalog__info">
+                    <h2><a href="#">Эдгар Аллан Кот</a></h2>
+                    <ul class="catalog__breadcrumbs">
+                        <li><a href="#">Котэ</a></li>
+                        <li><a href="#">Писательские котики</a></li>
+                    </ul>
+                    <fieldset class="rating">
+                        <input class="rating__input" type="radio" name="cat-7" id="cat-7-10" value="10">
+                        <label class="rating__star" for="cat-7-10" aria-label="Оценка 5 из 5" title="5 из 5"></label>
+
+                        <input class="rating__input" type="radio" name="cat-7" id="cat-7-9" value="9">
+                        <label class="rating__star half" for="cat-7-9" aria-label="Оценка 4.5 из 5"
+                            title="4.5 из 5"></label>
+
+                        <input class="rating__input" type="radio" name="cat-7" id="cat-7-8" value="8">
+                        <label class="rating__star" for="cat-7-8" aria-label="Оценка 4 из 5" title="4 из 5"></label>
+
+                        <input class="rating__input" type="radio" name="cat-7" id="cat-7-7" value="7">
+                        <label class="rating__star half" for="cat-7-7" aria-label="Оценка 3.5 из 5"
+                            title="3.5 из 5"></label>
+
+                        <input class="rating__input" type="radio" name="cat-7" id="cat-7-6" value="6">
+                        <label class="rating__star" for="cat-7-6" aria-label="Оценка 3 из 5" title="3 из 5"></label>
+
+                        <input class="rating__input" type="radio" name="cat-7" id="cat-7-5" value="5">
+                        <label class="rating__star half" for="cat-7-5" aria-label="Оценка 2.5 из 5"
+                            title="2.5 из 5"></label>
+
+                        <input class="rating__input" type="radio" name="cat-7" id="cat-7-4" value="4">
+                        <label class="rating__star" for="cat-7-4" aria-label="Оценка 2 из 5" title="2 из 5"></label>
+
+                        <input class="rating__input" type="radio" name="cat-7" id="cat-7-3" value="3">
+                        <label class="rating__star half" for="cat-7-3" aria-label="Оценка 1.5 из 5"
+                            title="1.5 из 5"></label>
+
+                        <input class="rating__input" type="radio" name="cat-7" id="cat-7-2" value="2">
+                        <label class="rating__star" for="cat-7-2" aria-label="Оценка 1 из 5" title="1 из 5"></label>
+
+                        <input class="rating__input" type="radio" name="cat-7" id="cat-7-1" value="1">
+                        <label class="rating__star half" for="cat-7-1" aria-label="Оценка 0.5 из 5"
+                            title="0.5 из 5"></label>
+                    </fieldset>
+                    <div>
+                        <span class="price">1 000 ₽</span>
+                    </div>
+                </div>
+                <p>
+                    Представитель редчайшей писательской породы. Непревзойденный автор детективного жанра, неоднократный
+                    обладатель премии «Одаренная лапа». Наблюдательный и тихий. При долгом отсутствии вдохновения может
+                    спровоцировать сюжет. Не выносит шума, детских сборищ и прикосновений. Требует большого запаса
+                    гусиных перьев, чернил и бумаги. Любимое лакомство – сгущенка.
+                </p>
+            </article>
+
+            <article class="catalog__item">
+                <p><img src="img/salem8.jpg" alt="Подпись котика (Котик пианист)"></p>
+                <div class="catalog__info">
+                    <h2><a href="#">Викториус</a></h2>
+                    <ul class="catalog__breadcrumbs">
+                        <li><a href="#">Котэ</a></li>
+                        <li><a href="#">Спортивные котики</a></li>
+                    </ul>
+                    <fieldset class="rating">
+                        <input class="rating__input" type="radio" name="cat-8" id="cat-8-10" value="10">
+                        <label class="rating__star" for="cat-8-10" aria-label="Оценка 5 из 5" title="5 из 5"></label>
+
+                        <input class="rating__input" type="radio" name="cat-8" id="cat-8-9" value="9">
+                        <label class="rating__star half" for="cat-8-9" aria-label="Оценка 4.5 из 5"
+                            title="4.5 из 5"></label>
+
+                        <input class="rating__input" type="radio" name="cat-8" id="cat-8-8" value="8">
+                        <label class="rating__star" for="cat-8-8" aria-label="Оценка 4 из 5" title="4 из 5"></label>
+
+                        <input class="rating__input" type="radio" name="cat-8" id="cat-8-7" value="7">
+                        <label class="rating__star half" for="cat-8-7" aria-label="Оценка 3.5 из 5"
+                            title="3.5 из 5"></label>
+
+                        <input class="rating__input" type="radio" name="cat-8" id="cat-8-6" value="6">
+                        <label class="rating__star" for="cat-8-6" aria-label="Оценка 3 из 5" title="3 из 5"></label>
+
+                        <input class="rating__input" type="radio" name="cat-8" id="cat-8-5" value="5">
+                        <label class="rating__star half" for="cat-8-5" aria-label="Оценка 2.5 из 5"
+                            title="2.5 из 5"></label>
+
+                        <input class="rating__input" type="radio" name="cat-8" id="cat-8-4" value="4">
+                        <label class="rating__star" for="cat-8-4" aria-label="Оценка 2 из 5" title="2 из 5"></label>
+
+                        <input class="rating__input" type="radio" name="cat-8" id="cat-8-3" value="3">
+                        <label class="rating__star half" for="cat-8-3" aria-label="Оценка 1.5 из 5"
+                            title="1.5 из 5"></label>
+
+                        <input class="rating__input" type="radio" name="cat-8" id="cat-8-2" value="2">
+                        <label class="rating__star" for="cat-8-2" aria-label="Оценка 1 из 5" title="1 из 5"></label>
+
+                        <input class="rating__input" type="radio" name="cat-8" id="cat-8-1" value="1">
+                        <label class="rating__star half" for="cat-8-1" aria-label="Оценка 0.5 из 5"
+                            title="0.5 из 5"></label>
+                    </fieldset>
+                    <div>
+                        <span class="price">1 000 ₽</span>
+                    </div>
+                </div>
+                <p>
+                    Грозный и непобедимый представитель породы спортсменов. Семикратный чемпион мира по котобоксу,
+                    обладатель «Золотого медальона». Ярко выраженный лидер, спокойный, немногословный. Придерживается
+                    строгой белковой диеты и спортивного режима. В свободное время увлекается паркуром.
+                </p>
+            </article>
+
+            <article class="catalog__item">
+                <p><img src="img/salem9.jpg" alt="Подпись котика (Котик пианист)"></p>
+                <div class="catalog__info">
+                    <h2><a href="#">Мумий-кот</a></h2>
+                    <ul class="catalog__breadcrumbs">
+                        <li><a href="#">Котэ</a></li>
+                        <li><a href="#">Египетские котики</a></li>
+                    </ul>
+                    <fieldset class="rating">
+                        <input class="rating__input" type="radio" name="cat-9" id="cat-9-10" value="10">
+                        <label class="rating__star" for="cat-9-10" aria-label="Оценка 5 из 5" title="5 из 5"></label>
+
+                        <input class="rating__input" type="radio" name="cat-9" id="cat-9-9" value="9">
+                        <label class="rating__star half" for="cat-9-9" aria-label="Оценка 4.5 из 5"
+                            title="4.5 из 5"></label>
+
+                        <input class="rating__input" type="radio" name="cat-9" id="cat-9-8" value="8">
+                        <label class="rating__star" for="cat-9-8" aria-label="Оценка 4 из 5" title="4 из 5"></label>
+
+                        <input class="rating__input" type="radio" name="cat-9" id="cat-9-7" value="7">
+                        <label class="rating__star half" for="cat-9-7" aria-label="Оценка 3.5 из 5"
+                            title="3.5 из 5"></label>
+
+                        <input class="rating__input" type="radio" name="cat-9" id="cat-9-6" value="6">
+                        <label class="rating__star" for="cat-9-6" aria-label="Оценка 3 из 5" title="3 из 5"></label>
+
+                        <input class="rating__input" type="radio" name="cat-9" id="cat-9-5" value="5">
+                        <label class="rating__star half" for="cat-9-5" aria-label="Оценка 2.5 из 5"
+                            title="2.5 из 5"></label>
+
+                        <input class="rating__input" type="radio" name="cat-9" id="cat-9-4" value="4">
+                        <label class="rating__star" for="cat-9-4" aria-label="Оценка 2 из 5" title="2 из 5"></label>
+
+                        <input class="rating__input" type="radio" name="cat-9" id="cat-9-3" value="3">
+                        <label class="rating__star half" for="cat-9-3" aria-label="Оценка 1.5 из 5"
+                            title="1.5 из 5"></label>
+
+                        <input class="rating__input" type="radio" name="cat-9" id="cat-9-2" value="2">
+                        <label class="rating__star" for="cat-9-2" aria-label="Оценка 1 из 5" title="1 из 5"></label>
+
+                        <input class="rating__input" type="radio" name="cat-9" id="cat-9-1" value="1">
+                        <label class="rating__star half" for="cat-9-1" aria-label="Оценка 0.5 из 5"
+                            title="0.5 из 5"></label>
+                    </fieldset>
+                    <div>
+                        <span class="price">1 000 ₽</span>
+                    </div>
+                </div>
+                <p>
+                    Представитель левой ветви египетской породы, продолжатель династии историков-археологов. Обожает
+                    историю Древнего Египта, от чего появилась страсть к мумиям и обматываниям. Увлеченный,
+                    любознательный и миролюбивый по характеру. Станет прекрасным компаньоном для египтолога или любого,
+                    имеющего неиссякаемый запас бинтов, туалетной бумаги, бумажных полотенец. Предупреждение: может
+                    обмотать кого угодно.
+                </p>
+            </article>
+
+            <article class="catalog__item">
+                <p><img src="img/salem10.gif" alt="Подпись котика (Котик пианист)"></p>
+                <div class="catalog__info">
+                    <h2><a href="#">Тейтум</a></h2>
+                    <ul class="catalog__breadcrumbs">
+                        <li><a href="#">Котэ</a></li>
+                        <li><a href="#">Музыковые котики</a></li>
+                    </ul>
+                    <fieldset class="rating">
+                        <input class="rating__input" type="radio" name="cat-10" id="cat-10-10" value="10">
+                        <label class="rating__star" for="cat-10-10" aria-label="Оценка 5 из 5" title="5 из 5"></label>
+
+                        <input class="rating__input" type="radio" name="cat-10" id="cat-10-9" value="9">
+                        <label class="rating__star half" for="cat-10-9" aria-label="Оценка 4.5 из 5"
+                            title="4.5 из 5"></label>
+
+                        <input class="rating__input" type="radio" name="cat-10" id="cat-10-8" value="8">
+                        <label class="rating__star" for="cat-10-8" aria-label="Оценка 4 из 5" title="4 из 5"></label>
+
+                        <input class="rating__input" type="radio" name="cat-10" id="cat-10-7" value="7">
+                        <label class="rating__star half" for="cat-10-7" aria-label="Оценка 3.5 из 5"
+                            title="3.5 из 5"></label>
+
+                        <input class="rating__input" type="radio" name="cat-10" id="cat-10-6" value="6">
+                        <label class="rating__star" for="cat-10-6" aria-label="Оценка 3 из 5" title="3 из 5"></label>
+
+                        <input class="rating__input" type="radio" name="cat-10" id="cat-10-5" value="5">
+                        <label class="rating__star half" for="cat-10-5" aria-label="Оценка 2.5 из 5"
+                            title="2.5 из 5"></label>
+
+                        <input class="rating__input" type="radio" name="cat-10" id="cat-10-4" value="4">
+                        <label class="rating__star" for="cat-10-4" aria-label="Оценка 2 из 5" title="2 из 5"></label>
+
+                        <input class="rating__input" type="radio" name="cat-10" id="cat-10-3" value="3">
+                        <label class="rating__star half" for="cat-10-3" aria-label="Оценка 1.5 из 5"
+                            title="1.5 из 5"></label>
+
+                        <input class="rating__input" type="radio" name="cat-10" id="cat-10-2" value="2">
+                        <label class="rating__star" for="cat-10-2" aria-label="Оценка 1 из 5" title="1 из 5"></label>
+
+                        <input class="rating__input" type="radio" name="cat-10" id="cat-10-1" value="1">
+                        <label class="rating__star half" for="cat-10-1" aria-label="Оценка 0.5 из 5"
+                            title="0.5 из 5"></label>
+                    </fieldset>
+                    <div>
+                        <span class="price">1 000 ₽</span>
+                    </div>
+                </div>
+                <p>
+                    Достойный представитель музыковой породы. Унаследовал свой незаурядный талант от далеких предков,
+                    работающих ещё тапёрами. Артистичный, виртуозный исполнитель джазовых композиций, обладатель
+                    абсолютного слуха. Общительный, веселый, легко переносит большое количество слушателей. Может
+                    приносить доход от репетиторства.
+                </p>
+            </article>
+        </div>
+    </section>
+</body>
+
+</html>

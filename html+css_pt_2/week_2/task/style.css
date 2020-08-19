@@ -1,0 +1,193 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  min-width: 800px;
+  max-width: 1920px;
+}
+
+/* Отспуты и заголовки */
+.wrap {
+  width: 85%;
+  margin: 0 auto;
+}
+
+h1 {
+  margin-top: 2%;
+  margin-bottom: 3%;
+}
+
+h1::first-letter {
+  color: red;
+}
+
+h1 span {
+  font-weight: normal;
+}
+
+p {
+  margin-top: 2%;
+}
+
+/* Слайдер */
+img {
+  width: 100%;
+}
+
+input,
+.content-box {
+  display: none;
+}
+
+.slider {
+  width: 100%;
+  white-space: nowrap;
+  margin-left: 0;
+  transition: margin-left linear 0.5s;
+}
+
+.slides {
+  display: inline-block;
+  position: relative;
+  box-sizing: border-box;
+  vertical-align: middle;
+  width: 25%;
+  white-space: normal;
+  padding: 1rem;
+  opacity: 0;
+  transition: opacity linear 0.5s;
+}
+
+#slider__check-1:checked ~ .slider {
+  margin-left: -1rem;
+}
+
+#slider__check-2:checked ~ .slider {
+  margin-left: -76%;
+}
+
+#slider__check-3:checked ~ .slider {
+  margin-left: -152%;
+}
+
+#slider__check-4:checked ~ .slider {
+  margin-left: -228%;
+}
+
+#slider__check-5:checked ~ .slider {
+  margin-left: -304%;
+}
+
+#slider__check-6:checked ~ .slider {
+  margin-left: -380%;
+}
+
+#slider__check-1:checked ~ .slider .slider__item-1,
+#slider__check-2:checked ~ .slider .slider__item-2,
+#slider__check-3:checked ~ .slider .slider__item-3,
+#slider__check-4:checked ~ .slider .slider__item-4,
+#slider__check-5:checked ~ .slider .slider__item-5,
+#slider__check-6:checked ~ .slider .slider__item-6 {
+  opacity: 1;
+}
+
+/* Оформление радиокнопки */
+.controls {
+  text-align: center;
+}
+
+label {
+  display: inline-block;
+  position: relative;
+  margin: 5px;
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 1px solid #b1b1b1;
+}
+
+label::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  height: 4px;
+  width: 4px;
+  border-radius: 50%;
+}
+
+#slider__check-1:checked ~ .controls .slider__label-1,
+#slider__check-2:checked ~ .controls .slider__label-2,
+#slider__check-3:checked ~ .controls .slider__label-3,
+#slider__check-4:checked ~ .controls .slider__label-4,
+#slider__check-5:checked ~ .controls .slider__label-5,
+#slider__check-6:checked ~ .controls .slider__label-6 {
+  background: #07f;
+  border: 1px solid #07f;
+}
+
+/* Модальное окно */
+.open-box {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(128, 128, 128, 0.9);
+  z-index: 1999;
+}
+
+.open-box:target {
+  display: block;
+}
+
+.open-box img {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60%;
+  max-width: 1000px;
+  min-width: 560px;
+}
+
+.close {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0.5em 1em;
+  font: 2em/1.5 sans-serif;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+}
+
+.close:hover {
+  color: red;
+}
+
+/* Описание при наведении мыши */
+.slides:hover .content-box {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem;
+  font: 0.8em/1.2 sans-serif;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+  z-index: 1998;
+}

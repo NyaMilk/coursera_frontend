@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Мяндекс</title>
+</head>
+
+<body>
+    <header>
+        <div class="wrap">
+            <h1>Бабуленькины котятки</h1>
+        </div>
+    </header>
+
+    <main>
+        <div class="wrap">
+            <input type="radio" id="cat-breed__check-1" name="cat-breed__check">
+            <input type="radio" id="cat-breed__check-2" name="cat-breed__check">
+            <input type="radio" id="cat-breed__check-3" name="cat-breed__check">
+            <input type="radio" id="cat-breed__check-4" name="cat-breed__check">
+            <aside class="cat-breed">
+                <label for="cat-breed__check-1">Абиссинская</label>
+                <label for="cat-breed__check-2">Британская</label>
+                <label for="cat-breed__check-3">Русская голубая</label>
+                <label for="cat-breed__check-4">Сиамская</label>
+            </aside>
+
+            <section class="gallary">
+                <div data-title="Гоша, 4 года" data-breed="1">
+                    <img src="img/1.jpg" alt="">
+                </div>
+                <div data-title="Кося, 5 лет" data-breed="2">
+                    <img src="img/2.jpg" alt="">
+                </div>
+                <div data-title="Платик, 2 года" data-breed="1">
+                    <img src="img/3.jpg" alt="">
+                </div>
+                <div data-title="Доша, 1 год" data-breed="3">
+                    <img src="img/4.jpg" alt="">
+                </div>
+                <div data-title="Мося, 2 года" data-breed="4">
+                    <img src="img/5.jpg" alt="">
+                </div>
+                <div data-title="Тося, 5 лет" data-breed="2">
+                    <img src="img/2.jpg" alt="">
+                </div>
+                <div data-title="Лесик, 2 года" data-breed="1">
+                    <img src="img/3.jpg" alt="">
+                </div>
+                <div data-title="Ошик, 5 месяцев" data-breed="4">
+                    <img src="img/6.jpg" alt="">
+                </div>
+            </section>
+
+            <aside class="rating">
+                <h2>Рейтинг</h2>
+                <label for="rating__check">по убыванию</label>
+                <input type="checkbox" id="rating__check">
+                <ul>
+                    <li class="high" data-breed="Абиссинская" data-score="9">
+                        <span class="rating__scale-1"></span>
+                    </li>
+                    <li class="middle" data-breed="Британская" data-score="8">
+                        <span class="rating__scale-2"></span>
+                    </li>
+                    <li class="high" data-breed="Русская голубая" data-score="10">
+                        <span class="rating__scale-1"></span>
+                    </li>
+                    <li class="low" data-breed="Сиамская" data-score="4">
+                        <span class="rating__scale-3"></span>
+                    </li>
+                </ul>
+            </aside>
+        </div>
+    </main>
+
+    <footer>
+        <div class="wrap">
+            <p>&copy; ООО Бабуленькины котятки, 2015</p>
+            <address>Наш адрес: улица Котовая, д. 5</address>
+        </div>
+    </footer>
+</body>
+
+</html>

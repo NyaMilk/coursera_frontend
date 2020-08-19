@@ -1,0 +1,160 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 18px;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0;
+  width: 985px;
+  background-color: #f6f5f3;
+}
+
+h2, h3 {
+    font-weight: 400;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.logo {
+  margin-right: 75px;
+  cursor: pointer;
+}
+
+/* Слайдер */
+.slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider .arrow {
+  padding: 15px 20px;
+  margin: 0 auto;
+}
+
+.slider blockquote {
+  font-size: 36px;
+  margin: 30px 0;
+  width: 630px;
+}
+
+/* Bидео */
+.video {
+  width: 640px;
+  height: 360px;
+  margin: 60px auto;
+  background: url(img/Video_snapshot.png) no-repeat;
+  position: relative;
+}
+
+.video h2 {
+  padding: 10px 0;
+  font-size: 29px;
+  text-align: center;
+  color: #fff;
+  background: rgba(98, 101, 104, 0.7);
+}
+
+.video__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 14%;
+  left: 0;
+}
+
+.video__btn-play {
+  padding: 30px 35px 30px 45px;
+}
+
+/* Объядинение оформления стелок */
+.slider .arrow,
+.video__btn-play {
+  border-radius: 50%;
+  background: #ffdb4a;
+  box-shadow: 1px 1px 5px #f78b45;
+  cursor: pointer;
+}
+
+.slider .arrow:hover,
+.video__btn-play:hover {
+  opacity: 0.8;
+}
+
+/* Преимущества */
+.features div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.features h2 {
+  font-size: 48px;
+  text-align: center;
+}
+
+.features__item h3 {
+  font-size: 28px;
+  font-weight: 400;
+  margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.features__item p {
+  line-height: 20px;
+}
+
+.features__item {
+  width: 220px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding-top: 85px;
+  position: relative;
+}
+
+.features__item:first-child {
+  margin-left: 30px;
+}
+
+.features__item:last-child {
+  width: 190px;
+}
+
+.features__item img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* Типа футер */
+.footer {
+  width: 100%;
+  padding: 35px 0 85px;
+  text-align: center;
+}
+
+.footer h2 {
+  font-size: 42px;
+  text-align: center;
+  margin: 15px 0 75px;
+}
+
+.footer__btn {
+  font-size: 36px;
+  background: linear-gradient(#ffe348, #ffdb02);
+  padding: 15px 45px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.footer__btn:hover {
+  background: linear-gradient(#ffe86a, #ffe130);
+}

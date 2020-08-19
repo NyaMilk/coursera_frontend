@@ -1,0 +1,195 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Заголовки, отступы */
+
+.wrap {
+  width: 85%;
+  margin: 0 auto;
+}
+
+h1 {
+  margin-top: 2%;
+}
+
+h1::first-letter {
+  color: red;
+}
+
+h1 span {
+  font-weight: normal;
+}
+
+/* Обрезка длинных имен */
+
+h2 {
+  width: 100%;
+  font: 1.2em/1.5 sans-serif;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Окрашивание имени */
+
+.catalog__item:hover h2 a {
+  color: red;
+}
+
+header p {
+  font: 1.2em/1.5 sans-serif;
+  margin-bottom: 2%;
+}
+
+.catalog label {
+  font: 1em/1.5 sans-serif;
+}
+
+#view-box:checked ~ #view-list {
+  margin-bottom: 70px;
+}
+
+/* Вывод плитками */
+
+#view-box:checked ~ .catalog__item {
+  display: inline-block;
+  width: 300px;
+  margin: 300px 55px 50px 0;
+  vertical-align: top;
+}
+
+#view-box:checked ~ .catalog__item > p {
+  position: relative;
+}
+
+#view-box:checked ~ .catalog__item > p img {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+/* Вывод списком */
+
+#view-list:checked ~ .catalog__item {
+  margin-top: 22px;
+  white-space: nowrap;
+}
+
+/* Можно по 33% умеьшив код */
+
+#view-list:checked ~ .catalog__item > * {
+  display: inline-block;
+  width: 40%;
+  vertical-align: top;
+  box-sizing: border-box;
+}
+
+#view-list:checked ~ .catalog__item > :first-child,
+#view-list:checked ~ .catalog__item > :last-child {
+  width: 30%;
+}
+
+#view-list:checked ~ .catalog__item .catalog__info {
+  padding: 0 5%;
+}
+
+#view-list:checked ~ .catalog__item p {
+  white-space: normal;
+}
+
+/* Изображение */
+
+img {
+  width: 100%;
+}
+
+.catalog__item:hover img {
+  opacity: 0.7;
+}
+
+/* Категории котиков (хлебные крошки) */
+
+.catalog__breadcrumbs {
+  list-style: none;
+}
+
+.catalog__breadcrumbs li {
+  display: inline-block;
+}
+
+.catalog__breadcrumbs li::after {
+  content: "-";
+  padding-left: 0.5ch;
+}
+
+.catalog__breadcrumbs li:last-child::after {
+  content: none;
+}
+
+.catalog__breadcrumbs li a {
+  color: #000;
+  font: 0.7em/2 sans-serif;
+}
+
+.catalog__breadcrumbs a:hover {
+  text-decoration: none;
+  color: red;
+}
+
+/* Цена */
+
+.price {
+  font: bold 1.2em/1.5 sans-serif;
+  color: #911;
+}
+
+.price-old {
+  text-decoration: line-through;
+  font: 0.8em/1.2 sans-serif;
+  color: #000;
+}
+
+/* Рейтинг */
+
+.rating {
+  display: inline-block;
+  border: none;
+}
+
+.rating__input {
+  display: none;
+}
+
+.rating__star {
+  float: right;
+}
+
+.rating__star::before {
+  font-family: FontAwesome;
+  content: "\f005";
+  display: inline-block;
+  font-size: 1.5em;
+  line-height: 1;
+  padding: 0.4em 0.2em;
+  color: white;
+  text-shadow: 0 0 2px #e0c218;
+  cursor: pointer;
+}
+
+.rating .half::before {
+  content: "\f089";
+  position: absolute;
+  text-shadow: none;
+}
+
+.rating__input:checked ~ .rating__star::before,
+.rating__star:hover::before,
+.rating__star:hover ~ .rating__star::before {
+  color: #e0c218;
+}
