@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+</head>
+
+<body>
+    <!-- <style>
+        .animation {
+            width: 150px;
+            height: 150px;
+            background-color: #f00;
+            animation: show 3s linear alternate forwards;
+            transition: all .5s;
+        }
+
+        .animation:hover {
+            background-color: #ff0;
+        }
+
+        @keyframes show {
+            25% {
+                transform: translateX(100px);
+            }
+
+            50% {
+                transform: translate(100px, 150px);
+            }
+
+            75%,
+            100% {
+                transform: translate(100px, 150px) scale(2) rotate(145deg);
+            }
+        }
+    </style> -->
+    <!-- <style>
+        .animation {
+            width: 150px;
+            height: 150px;
+            background-color: #f00;
+            animation: show 3s linear alternate forwards;
+            transition: all .5s;
+        }
+
+        .animation:hover {
+            background-color: #ff0;
+        }
+
+        @keyframes show {
+            25% {
+                transform: translateX(100px);
+            }
+
+            50% {
+                transform: translateX(100px) translateY(150px);
+            }
+
+            75% {
+                transform: translateX(100px) translateY(150px) scale(2);
+            }
+
+            100% {
+                transform: translate(100px, 150px) scale(2) rotate(145deg);
+            }
+        }
+    </style> -->
+    <style>
+        .animation {
+            width: 150px;
+            height: 150px;
+            background-color: #f00;
+            animation: show 3s linear alternate infinite;
+            transition: all .5s;
+        }
+
+        .animation:hover {
+            background-color: #ff0;
+        }
+
+        @keyframes show {
+            25% {
+                transform: translateX(100px);
+            }
+
+            50% {
+                transform: translateX(100px) translateY(150px);
+            }
+
+            75%,
+            100% {
+                transform: translate(100px, 150px) scale(2) rotate(145deg);
+            }
+        }
+    </style>
+    <div class="animation"></div>
+</body>
+
+</html>
